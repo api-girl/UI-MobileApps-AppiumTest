@@ -16,7 +16,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Base64;
 
-public class BaseTest {
+abstract public class BaseTest {
 
     protected AppiumDriver<WebElement> driver;
     protected DesiredCapabilities caps;

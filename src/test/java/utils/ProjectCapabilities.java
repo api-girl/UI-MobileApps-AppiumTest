@@ -4,7 +4,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.nio.file.Paths;
 
-public class ProjectCapabilitiesGS {
+public class ProjectCapabilities {
 
     public static String localPathToApp(String appName){
         return Paths.get(System.getProperty("user.dir"), "apps", appName).toString();
@@ -38,6 +38,12 @@ public class ProjectCapabilitiesGS {
     public static DesiredCapabilities TheAppIOS(){
         DesiredCapabilities caps = setIosCaps();
         caps.setCapability("app", localPathToApp("TheApp.app.zip"));
+        return caps;
+    }
+
+    public static DesiredCapabilities TheTrialApp(){
+        DesiredCapabilities caps = setAndroidCaps();
+        caps.setCapability("app", localPathToApp("ApiDemos-debug.apk"));
         return caps;
     }
 }

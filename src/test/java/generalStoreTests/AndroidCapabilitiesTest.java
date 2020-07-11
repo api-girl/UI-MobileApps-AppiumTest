@@ -1,13 +1,13 @@
 package generalStoreTests;
 
 import utils.BaseTest;
-import utils.ProjectCapabilitiesGS;
+import utils.ProjectCapabilities;
 import org.testng.annotations.Test;
 
 public class AndroidCapabilitiesTest extends BaseTest {
 
     public AndroidCapabilitiesTest(){
-        caps = ProjectCapabilitiesGS.TheAppAndroid();
+        caps = ProjectCapabilities.TheAppAndroid();
     }
 
     @Test
