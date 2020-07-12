@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class AndroidCapabilitiesTest extends BaseTest {
 
     public AndroidCapabilitiesTest(){
-        caps = ProjectCapabilities.TheAppAndroid();
+        caps = ProjectCapabilities.GeneralStoreAndroid();
     }
 
     @Test

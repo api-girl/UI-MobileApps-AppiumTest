@@ -28,7 +28,7 @@ public class ProjectCapabilities {
         return caps;
     }
 
-    public static DesiredCapabilities TheAppAndroid(){
+    public static DesiredCapabilities GeneralStoreAndroid(){
         DesiredCapabilities caps = setAndroidCaps();
         caps.setCapability("app", localPathToApp("General-Store.apk"));
         //caps.setCapability("appWaitActivity", "");
