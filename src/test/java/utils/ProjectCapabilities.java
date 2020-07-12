@@ -43,7 +43,7 @@ public class ProjectCapabilities {
 
     public static DesiredCapabilities TheTrialApp(){
         DesiredCapabilities caps = setAndroidCaps();
-        caps.setCapability("app", localPathToApp("ApiDemos-debug.apk"));
+        caps.setCapability("app", localPathToApp("TheApp.apk"));
         return caps;
     }
 }
