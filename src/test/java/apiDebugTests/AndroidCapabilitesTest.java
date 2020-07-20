@@ -9,7 +9,7 @@ import static org.testng.Assert.assertNotNull;
 public class AndroidCapabilitesTest extends BaseTest {
 
     public AndroidCapabilitesTest(){
-        caps = ProjectCapabilities.TheTrialApp();
+        caps = ProjectCapabilities.TheWhatsApp();
     }
 
     @Test
